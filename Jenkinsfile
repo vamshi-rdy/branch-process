@@ -1,10 +1,16 @@
-pipeline {
-    agent any
-        stages {
-            stage (" check out") {
-                steps {
-                    sh " echo checkout" 
-                }
-            }
-        }
-}
+pipeline
+{
+   agent any
+   
+   stages
+   {
+       stage('checkout')
+       {
+           steps
+           {
+               sh 'echo checkout'
+           }
+       }
+   }   
+}        
+           
